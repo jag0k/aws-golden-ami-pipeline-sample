@@ -8,7 +8,7 @@
     },
     "parentAWSAccountID": {
       "Type": "String",
-      "Default": ""
+      "Default": "430124244827"
     }
   },
   "Resources": {

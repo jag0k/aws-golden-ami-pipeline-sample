@@ -5,12 +5,12 @@
     
    "productName": {
       "Type": "String",
-      "Default": "ProductName-ProductVersion",
+      "Default": "",
       "Description": "ProductName-ProductVersion combination of the product for which you intend to use the pipeline. You get to override this later when you trigger automation workflow. "
     },
     "productOSAndVersion": {
       "Type": "String",
-      "Default": "OperatingSystemName-OperatingSystemVersion",
+      "Default": "RHEL-7.6",
       "Description": "Operating system name and OS version. You get to override this later when you trigger automation workflow."
     },
      "buildVersion": {
@@ -47,12 +47,12 @@
     },
     "ApproverUserIAMARN": {
       "Type": "String",
-      "Default": "",
+      "Default": "arn:aws:iam::430124244827:user/golden-ami-approval",
       "Description": "IAM ARN of the Golden AMI approver. The approver must have AmazonSSMAutomationApproverAccess policy associated with it's IAM Profile ."
   },
   "EmailID": {
       "Type": "String",
-      "Default": "myemail@mycompany.com",
+      "Default": "jago@redant.com.au",
       "AllowedPattern": "([a-zA-Z0-9_\\-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9\\-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)",
       "Description": "Your email ID for receiving Inspector assessment results and golden AMI creation notification."
 
@@ -71,7 +71,7 @@
     },
      "MetadataJSON":{
          "Type":"String",
-         "Default":"{\"Account_ID_1\":\"region_1,region_2\"}",
+         "Default":"{\"480127203578\":\"ap-southeast-2\",\"893322406440\":\"ap-southeast-2\"}",
       "Description": "Metadata of accounts and regions for distributing the golden AMI."
       },
        "roleName":{
